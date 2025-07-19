@@ -1,0 +1,13 @@
+{
+  "name": "Game Title in Library",
+  "version": "v1.0.0",
+  "author": "hardjonn",
+  "description": "Adds game titles to the cards in Library",
+  "manifest_version": 8,
+  "target": "Library",
+  "inject": {
+    "bigpicture.css": [
+      "bigpicture"
+    ]
+  }
+}

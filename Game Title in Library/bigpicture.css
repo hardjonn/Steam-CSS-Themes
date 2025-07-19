@@ -1,0 +1,16 @@
+div[role="gridcell"]>div.Panel>div[id^=":"] {
+  display: block !important;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+div[role="grid"] {
+  gap: 84px 16px !important;
+}
+
+div[role="grid"]::after {
+  content: "";
+  display: block;
+  height: 32px;
+  grid-column: 1 / -1;
+}
