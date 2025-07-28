@@ -5,7 +5,7 @@ div[role="gridcell"]>div.Panel>div[id^=":"] {
 }
 
 div[role="grid"] {
-  gap: 84px 16px !important;
+  gap: var(--jh-grid-row-gap) 16px !important;
 }
 
 div[role="grid"]::after {

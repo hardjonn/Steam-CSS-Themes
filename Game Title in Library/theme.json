@@ -1,13 +1,47 @@
 {
   "name": "Game Title in Library",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "author": "hardjonn",
   "description": "Adds game titles to the cards in Library",
   "manifest_version": 8,
   "target": "Library",
   "inject": {
-    "bigpicture.css": [
-      "bigpicture"
-    ]
+    "bigpicture.css": ["bigpicture"]
+  },
+  "patches": {
+    "Grid Row Gap": {
+      "type": "slider",
+      "default": "4",
+      "values": {
+        "0": {
+          "--jh-grid-row-gap": ["40px", "SP"]
+        },
+        "1": {
+          "--jh-grid-row-gap": ["48px", "SP"]
+        },
+        "2": {
+          "--jh-grid-row-gap": ["56px", "SP"]
+        },
+        "3": {
+          "--jh-grid-row-gap": ["64px", "SP"]
+        },
+        "4": {
+          "--jh-grid-row-gap": ["72px", "SP"]
+        },
+        "5": {
+          "--jh-grid-row-gap": ["80px", "SP"]
+        },
+        "6": {
+          "--jh-grid-row-gap": ["88px", "SP"]
+        },
+        "7": {
+          "--jh-grid-row-gap": ["96px", "SP"]
+        },
+        "8": {
+          "--jh-grid-row-gap": ["104px", "SP"]
+        }
+      },
+      "components": []
+    }
   }
 }
