@@ -1,4 +1,4 @@
-div[role="gridcell"]>div.Panel>div[id^=":"] {
+div[role="gridcell"]>div.Panel>div:nth-of-type(2) {
   display: block !important;
   font-size: 12px;
   margin-top: 4px;
@@ -13,4 +13,5 @@ div[role="grid"]::after {
   display: block;
   height: 32px;
   grid-column: 1 / -1;
+
 }
