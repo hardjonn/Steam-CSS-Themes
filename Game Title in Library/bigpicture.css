@@ -1,16 +1,16 @@
-div[role="gridcell"]>div.Panel>div:nth-of-type(2) {
+:not([id^="virtual"]) > div[role="gridcell"] > div.Panel > div:nth-of-type(2) {
   display: block !important;
   font-size: 12px;
   margin-top: 4px;
 }
 
-div[role="grid"] {
-  gap: var(--jh-grid-row-gap) 16px !important;
+:not([id^="virtual"]) > div[role="grid"] {
+  gap: var(--jh-grid-row-gap) 16px !important;;
 }
 
-div[role="grid"]::after {
+:not([id^="virtual"]) > div[role="grid"]::after {
   content: "";
   display: block;
   height: 32px;
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /* span full row */
 }
